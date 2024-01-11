@@ -1,0 +1,191 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Indie Flower', cursive;
+  background-image: linear-gradient(#19535F,#160C28);
+  display: flex;
+}
+
+h1{
+  text-align: center;
+  color: #ADFCF9;
+  font-size: 4rem;
+}
+
+.description{
+  color: #ADFCF9;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.Held{
+  background-color: #36af3a;
+}
+
+.board{
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dices{
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 364px;
+}
+
+.column{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dice{
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+}
+
+button{
+  font-family: 'Indie Flower', cursive;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: #160C28;
+  color: #ADFCF9;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.02);
+}
+
+button:active{
+  transform: scale(0.98);
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset{
+  width: 94%;
+  display: block;
+  margin: 0.5rem auto 0 auto;
+}
+
+.winCard{
+  position: absolute; 
+  top:10%;
+  width: 100%;
+  height: 50%;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #160C28;
+}
+
+.winCard h2{
+  margin-bottom: 2rem;
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.close{
+  align-self:flex-end;
+  justify-self: flex-start;
+  border: none;
+}
+
+.close:hover{
+  transform: none;
+}
+
+.wraper{
+  min-height: 90vh;
+}
+
+.footer{
+  margin-top:3rem;
+  background-color: black;
+  color: aliceblue;
+  overflow: visible;
+  align-self: flex-end;
+  width: 100vw;
+}
+
+footer{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  max-width: 500px;
+  height: 3rem;
+}
+
+.footer footer a{
+  text-decoration: none;
+}
+
+.git, .youtube{
+  font-size: 1.5em;
+}
+
+.popout {
+  animation: popout 1s ease;
+  -webkit-animation: popout 1s ease;
+}
+@keyframes popout {
+  from{transform:scale(0)}
+  80%{transform:scale(1.2)}
+  to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+  from{-webkit-transform:scale(0)}
+  80%{-webkit-transform:scale(1.2)}
+  to{-webkit-transform:scale(1)}
+}
+
+.one{
+  background-image: url(./assets/dice-six-faces-one.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.two{
+  background-image: url(./assets/dice-six-faces-two.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.three{
+  background-image: url(./assets/dice-six-faces-three.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.four{
+  background-image: url(./assets/dice-six-faces-four.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.five{
+  background-image: url(./assets/dice-six-faces-five.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.six{
+  background-image: url(./assets/dice-six-faces-six.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
